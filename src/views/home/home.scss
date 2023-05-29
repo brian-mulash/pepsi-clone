@@ -1,0 +1,69 @@
+main.home_page {
+
+    .hero-section {
+        background: url("/src/assets/background.png");
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .left-side {
+            position: relative;
+            
+
+            img {
+                position: absolute;
+                bottom: 0;
+                width: 750px;
+            }
+        }
+
+        .right-side {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            padding-right: 150px;
+            
+            img {
+                width: fit-content
+            }
+
+            .control-action {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+
+                .action-btn {
+                    padding: 10px 20px;
+                    width: fit-content;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #fff;
+                    background: transparent;
+                    border-radius: 30px;
+                    border: 2px solid #fff;
+                    align-self: center;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 11px;
+                    width: 400px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .second-section {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+    }
+}
+
