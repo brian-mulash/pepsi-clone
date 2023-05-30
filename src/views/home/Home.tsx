@@ -35,7 +35,39 @@ const Home = () => {
             </section>
 
             <section className="second-section">
+                <div className="left-side">
+                    <div className="img-container">
+                        <img src="/src/assets/new-improved-taste.svg" alt="#" />
+                        <img src="/src/assets/pzs-can-nobug-desktop.png" alt="#" />
+                    </div>
+                </div>
+                <div className="right-side">
+                    <div className='right-side-container'>
+                        <img src="/src/assets/headline.svg" alt="#" />
 
+                        <img src="/src/assets/try-it-to-believe-it.svg" alt="#" />
+
+                        <div className="thumbnails">
+                            <div className="thumbnail-one">
+                                <img src="/src/assets/gagt_steve.png" alt="#" />
+                            </div>
+                            <div className="thumbnail-two">
+                                <img src="/src/assets/gagt_ben.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section className='third-section'>
+                <div className="left-side">
+
+                </div>
+
+                <div className="right-side">
+                    
+                </div>
             </section>
         </main>
     )

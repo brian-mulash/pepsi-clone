@@ -48,6 +48,13 @@ main.home_page {
                     border-radius: 30px;
                     border: 2px solid #fff;
                     align-self: center;
+                    cursor: pointer;
+                    transition: all 300ms ease;
+
+                    &:hover {
+                        color: var(--primary-color);
+                        background-color: #fff;
+                    }
                 }
 
                 p {
@@ -64,6 +71,78 @@ main.home_page {
         width: 100%;
         height: 100vh;
         background-color: black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .left-side {
+            position: relative;
+
+            .img-container {
+                position: absolute;
+                bottom: 0;
+                //background: orange;
+                width: 900px;
+                
+
+                img:nth-child(1) {
+                    position: absolute;
+                    width: 160px;
+                    right: 250px;
+                    top: 130px;
+                    
+                }
+
+                img:nth-child(2) {
+                    width: 100%;
+                    //background: blue;
+                }
+            }
+        }
+
+        .right-side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            padding-right: 60px;
+            //background: orange;
+
+            .right-side-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+                //background: red;
+
+                img:nth-child(1) {
+                    width: 450px;
+                }
+
+                img:nth-child(2) {
+                    width: fit-content;
+                }
+
+                .thumbnails {
+                    display: flex;
+                    gap: 50px;
+
+                    .thumbnail-one {
+                        
+                        img {
+                            width: 200px;
+                        }
+                    }
+
+                    .thumbnail-two {
+                        img {
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
     }
+
+
 }
 
